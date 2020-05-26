@@ -1,0 +1,206 @@
+@import "assets/styles/abstracts/_function.scss";
+.contact-form {
+  &__content-wrap {
+    background-image: url("assets/images/bg-contact-form.png");
+    height: 791px;
+    position: relative;
+  }
+
+  &__img-bg {
+    position: absolute;
+    width: 100%;
+    padding: 25px 30px 20px 30px;
+    z-index: 11;
+
+    img {
+      width: 100%;
+      height: 741px;
+    }
+  }
+
+  &__main-content {
+    .container-wrap {
+      margin: 0 100px;
+    }
+
+    .main-content-wrap {
+      display: flex;
+      z-index: 13;
+      position: relative;
+      padding-top: 100px;
+
+      &__img-clock {
+        position: absolute;
+        top: 0;
+        left: 30%;
+
+        img {
+          width: 700px;
+          height: 791px;
+        }
+      }
+
+      .form-wrap {
+        flex-grow: 1;
+
+        &__content {
+          width: 335px;
+        }
+
+        &__text {
+          p {
+            font-style: normal;
+            font-weight: bold;
+            letter-spacing: 4.8px;
+            @include setTextProperty(
+              GilroyRegular,
+              12px,
+              15px,
+              uppercase,
+              #fff
+            );
+          }
+
+          h1 {
+            font-family: QuadonMedium;
+            font-size: 44px;
+            line-height: 52px;
+            color: #fcd18b;
+          }
+        }
+
+        form {
+          label {
+            font-style: normal;
+            font-weight: normal;
+            letter-spacing: 1px;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            @include setTextProperty(GilroyThin, 11px, 42px, uppercase, #fff);
+          }
+
+          small {
+            color: #f15828;
+          }
+
+          .is-invalid {
+            border-color: #f15828 !important;
+          }
+
+          input,
+          textarea {
+            border: none;
+            border-bottom: 1px solid #476773;
+            border-radius: 0;
+            background: none;
+            box-shadow: none;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 22px;
+            text-align: justify;
+            letter-spacing: 0.57px;
+            @include setTextProperty(GilroyRegular, 14px, 22px, none, #fff);
+          }
+          .btn-submit {
+            cursor: pointer;
+
+            button {
+              border: none;
+              background: none;
+              outline: none;
+            }
+          }
+        }
+      }
+
+      .infor-address {
+        width: 160px;
+        text-align: center;
+
+        .logo {
+          p {
+            letter-spacing: 1px;
+            margin-top: 5px;
+            @include setTextProperty(GilroyThin, 12px, 15px, none, #fff);
+          }
+        }
+
+        &__field {
+          margin-top: 40px;
+
+          p {
+            font-style: normal;
+            font-weight: normal;
+            text-align: center;
+            margin-top: 10px;
+            @include setTextProperty(GilroyThin, 14px, 23px, none, #fff);
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    &__img-bg {
+      display: none;
+    }
+
+    &__content-wrap {
+      height: auto;
+    }
+
+    &__main-content {
+      .container-wrap {
+        margin: 0 10px;
+      }
+
+      .main-content-wrap {
+        flex-direction: column;
+        padding-top: 30px;
+
+        &__img-clock {
+          display: none;
+        }
+
+        .form-wrap {
+          &__content {
+            width: 100%;
+          }
+
+          form {
+            .btn-submit {
+              text-align: center;
+            }
+          }
+        }
+
+        .infor-address {
+          width: 100%;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    &__main-content {
+      .main-content-wrap {
+        &__img-clock {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1430px) {
+    &__main-content {
+      .main-content-wrap {
+        &__img-clock {
+          img {
+            width: 540px;
+          }
+        }
+      }
+    }
+  }
+}

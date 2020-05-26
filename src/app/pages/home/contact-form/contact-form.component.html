@@ -1,0 +1,113 @@
+<div class="contact-form">
+  <div class="contact-form__content-wrap">
+    <div class="contact-form__img-bg">
+      <img src="assets/images/rectangle-border-form.png" alt="" />
+    </div>
+    <div class="contact-form__main-content">
+      <div class="container-wrap">
+        <div class="main-content-wrap">
+          <div class="main-content-wrap__img-clock">
+            <img src="assets/images/classic-clock.png" alt="" />
+          </div>
+          <div class="form-wrap">
+            <div class="form-wrap__content">
+              <div class="form-wrap__text">
+                <p>Nhận giải mã trực tiếp</p>
+                <h1>Liên hệ ngay</h1>
+              </div>
+              <form action="" (ngSubmit)="onSubmit()" [formGroup]="fContact">
+                <div class="form-group">
+                  <label for="">Họ và tên</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    formControlName="name"
+                    [ngClass]="{
+                      'is-invalid': submitted && fContact.controls.name.errors
+                    }"
+                  />
+                  <div *ngIf="submitted && fContact.controls.name.errors">
+                    <small *ngIf="fContact.controls.name.errors.required">
+                      Trường này không nược để trống
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="">Số điện thoại</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    formControlName="phone"
+                    [ngClass]="{
+                      'is-invalid': submitted && fContact.controls.phone.errors
+                    }"
+                  />
+                  <div *ngIf="submitted && fContact.controls.phone.errors">
+                    <small *ngIf="fContact.controls.phone.errors.required">
+                      Trường này không nược để trống
+                    </small>
+                    <small *ngIf="fContact.controls.phone.errors.pattern">
+                      Định dạng số điện thoại chưa đúng
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="">Email</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    formControlName="email"
+                    [ngClass]="{
+                      'is-invalid': submitted && fContact.controls.email.errors
+                    }"
+                  />
+                  <div *ngIf="submitted && fContact.controls.email.errors">
+                    <small *ngIf="fContact.controls.email.errors.required">
+                      Trường này không nược để trống
+                    </small>
+                    <small *ngIf="fContact.controls.email.errors.pattern">
+                      Định dạng email chưa đúng
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="">Yêu cầu bổ sung</label>
+                  <textarea
+                    cols="30"
+                    rows="2"
+                    class="form-control"
+                    formControlName="content"
+                  ></textarea>
+                </div>
+                <div class="btn-submit">
+                  <button>
+                    <img src="assets/images/btn-submit.png" alt="" />
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="infor-address">
+            <div class="logo">
+              <img src="assets/images/logo.png" alt="" />
+              <p>ASTROLOGY</p>
+            </div>
+            <div class="infor-address__field">
+              <img src="assets/images/map.png" alt="" />
+              <p>151 Hoàng Hoa Thám, Ba Đình, Hà Nội</p>
+            </div>
+            <div class="infor-address__field">
+              <img src="assets/images/phone.png" alt="" />
+              <p>+84 (0) 989 89 88 98</p>
+            </div>
+            <div class="infor-address__field">
+              <img src="assets/images/mail.png" alt="" />
+              <p>contact@domain.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

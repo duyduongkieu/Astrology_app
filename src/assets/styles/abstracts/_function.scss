@@ -1,0 +1,19 @@
+@mixin setBackground($bgRepeat, $bgPositon, $bgSize) {
+  background-repeat: $bgRepeat;
+  background-position: $bgPositon;
+  background-size: cover;
+}
+
+@mixin setTextProperty(
+  $fonFaminy,
+  $fontSize,
+  $lineHeight,
+  $textTransform,
+  $color
+) {
+  font-family: $fonFaminy;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  text-transform: $textTransform;
+  color: $color;
+}

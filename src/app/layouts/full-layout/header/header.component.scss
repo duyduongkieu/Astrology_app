@@ -1,0 +1,192 @@
+.header-content {
+  z-index: 14;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .container-wrap {
+    margin: 90px 100px;
+  }
+
+  &__moblie {
+    display: none;
+  }
+
+  &__contact {
+    .contact-wrap {
+      display: flex;
+
+      &__face {
+        margin-left: 30px;
+
+        a {
+          color: #fff;
+
+          &:hover {
+            color: #f15828;
+          }
+        }
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        color: #fff;
+        font-family: GilroyThin;
+
+        &:hover {
+          color: #f15828;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    text-align: center;
+
+    p {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 1px;
+      color: #fff;
+      font-family: GilroyThin;
+      margin-top: 5px;
+    }
+  }
+
+  &__menu-nav {
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+      display: flex;
+
+      li {
+        margin-right: 30px;
+        color: #fff;
+
+        &:hover {
+          a {
+            color: #f15828;
+          }
+        }
+
+        a {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 15px;
+          letter-spacing: 1px;
+          color: #fff;
+          font-family: GilroyThin;
+        }
+      }
+
+      .globe-icon {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .menu-nav-device {
+      display: none;
+    }
+
+    &__moblie {
+      display: block;
+      padding: 15px;
+
+      .wrap-header-mobile {
+        display: flex;
+      }
+
+      .menu-nav-mobile {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #f4f6f7;
+        width: 320px;
+
+        .close-menu {
+          text-align: right;
+          padding: 10px;
+
+          i {
+            font-size: 20px;
+          }
+        }
+
+        ul {
+          li {
+            margin-top: 10px;
+            color: #5f727f;
+            &:hover {
+              color: #f15828;
+            }
+
+            a {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 15px;
+              letter-spacing: 1px;
+              font-family: GilroyRegular;
+              margin-top: 5px;
+              color: #5f727f;
+
+              &:hover {
+                color: #f15828;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__logo {
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    &__icon-menu {
+      padding-top: 30px;
+
+      i {
+        font-size: 25px;
+        color: #fff;
+      }
+    }
+
+    .container-wrap {
+      margin: 0;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container-wrap {
+      margin: 90px 50px;
+    }
+
+    &__menu-nav {
+      ul {
+        padding-left: 0;
+        li a {
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+}

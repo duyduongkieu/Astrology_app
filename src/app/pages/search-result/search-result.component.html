@@ -1,0 +1,568 @@
+<!-- <h1>{{ response }}</h1> -->
+<div class="result-page">
+  <div class="result-page-bg-img">
+    <div class="img-bg">
+      <img src="assets/images/outer-line.png" alt="" />
+    </div>
+  </div>
+  <div class="result-page-bg"></div>
+  <div class="result-page-bg-bot"></div>
+  <div class="result-page__wrap">
+    <div class="container-wrap">
+      <div class="main-content-wrap">
+        <div class="border-bot" [style.bottom.px]="heightElement"></div>
+        <div class="main-content-wrap__left">
+          <div class="content-left-wrap">
+            <p class="left-title">Khám phá kết quả</p>
+            <ngb-tabset #t="ngbTabset">
+              <ngb-tab id="tab-selectbyid1">
+                <ng-template ngbTabTitle
+                  >Họ tên & Ý nghĩa, sứ mệnh
+                </ng-template>
+                <ng-template ngbTabContent>
+                  <div class="tab-set-1">
+                    <div class="tab-set-1__wrap">
+                      <mat-accordion>
+                        <mat-expansion-panel>
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                              Thần số học là gì ?
+                            </mat-panel-title>
+                          </mat-expansion-panel-header>
+                          <p>
+                            {{ define }}
+                          </p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel
+                          (opened)="panelOpenState = true"
+                          (closed)="panelOpenState = false"
+                        >
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                              Thần số học giúp gì cho bạn ?
+                            </mat-panel-title>
+                          </mat-expansion-panel-header>
+                          <p>
+                            {{ meaning }}
+                          </p>
+                        </mat-expansion-panel>
+                      </mat-accordion>
+                      <div class="tab-set-1__main-content">
+                        <div class="title-meaning">
+                          <h1>Ý nghĩa, sứ mệnh</h1>
+                          <p>
+                            Tượng trưng cho sự hòa nhã, ngọt ngào, sẵn sàng giúp
+                            đỡ và xã giao khéo léo. Tiêu biểu cho quyền năng
+                            thiêng liêng, huyền bí và mọi sự bí mật trong cuộc
+                            đời đều chỉ khám phá bằng sự thông minh của trí óc
+                            và mọi hiểu biết đều có sự hỗ trợ của ý chí cương
+                            quyết.
+                          </p>
+                        </div>
+                        <div class="title-meaning-other">
+                          <h1>Tính tình & nhân cách</h1>
+                          <p>
+                            Rất tế nhị trong việc giao thiệp, biết xét đoán
+                            những người khác. Cộng tác với người khác thoải mái
+                            hơn là lãnh đạo họ. Thích sự quen thuộc thân mật yên
+                            ổn hơn là muốn ra sao thì ra, hơn là cái gì mới lạ
+                            quá. Thường trầm lặng, dè dặt, cân nhắc kỹ lưỡng
+                            trước khi hành động. Thích sự hòa thuận cộng tác.
+                            Không ưa cãi cọ, xích mích. Vì vậy không thể tin
+                            tưởng hoàn toàn vào sự thành công của Bạn. Dễ thất
+                            vọng, chán nản, lo nghĩ nếu gặp những chuyện không
+                            vui. Nếu sử dụng đúng chỗ, tính lịch thiệp sẽ đem
+                            lại nhiều kết quả không ngờ. Nếu không dùng đúng chỗ
+                            có thể xảy ra chuyện bất hòa.
+                          </p>
+                          <p>
+                            Dễ bị sự chi phối bởi tình cảm hơn là lý trí, lãng
+                            mạn, dễ xúc cảm, hòa nhã. Tuy có vẻ thản nhiên trầm
+                            lặng bên ngoài, thật ra có nhiều khi "cười bên ngoài
+                            mặt, khóc thầm bên trong". Khi vui thì thật là vui,
+                            khi buồn thật buồn. Rất dễ gây tình bạn, ít đòi hỏi
+                            ở người khác, nhưng lại không phải là người ưa sống
+                            tập thể. Không thích là trung tâm vũ trụ, không
+                            thích làm mọi người chú ý. Thích là khán giả hơn là
+                            làm diễn viên. Chịu khó làm việc hăng hái, vì vậy dễ
+                            đem lại thành công cho các việc có tổ chức. Ít khi
+                            mất bình tĩnh. Khi đau khổ hay giận dữ thường có
+                            tính thâm trầm, ngậm đắng nuốt cay hơn là bộc phát.
+                            Ưa hòa bình, thích phục sức trang điểm và sống nhiều
+                            về tình cảm.
+                          </p>
+                        </div>
+                        <div class="title-meaning-other">
+                          <h1>Công việc, năng khiếu & tiền bạc</h1>
+                          <p>
+                            Có óc sáng kiến và tưởng tượng nhưng có khả năng
+                            nhiều trong công việc người trợ lý hơn là cấp chỉ
+                            huy, cộng tác hơn là tranh chấp. Chẳng hạn làm diễn
+                            viên giỏi hơn làm đạo diễn, chơi nhạc hay hơn soạn
+                            nhạc. Dễ thành công trong những việc đòi hỏi sự tế
+                            nhị như giao dịch, nhất là các nghề về tâm lý học,
+                            xã hội học, cố vấn, phụ tá, thư ký vì dễ đem lại
+                            tình cảm cho những người bị bối rối, đau khổ, bệnh
+                            tật. Các ngành thích hợp khác là dạy học, nghiên cứu
+                            y khoa, kế toán. Là nhân viên cộng tác chân thành,
+                            đắc lực, tín cẩn, và có lương tâm. Ít gặp sự may mắn
+                            trên đường công danh. Ít đòi hỏi, cam phận thủ
+                            thường, thiếu tinh thần tranh đấu. Nếu là chủ nhân,
+                            rất dễ chịu, ít ra lệnh, ít thúc đẩy thuộc hạ nên
+                            không có nhiều kết quả mỹ mãn. Tiêu tiền rất hợp lý
+                            và chắc chắn. Ít phung phí trừ trường hợp đối với
+                            người yêu. Ghét nợ nần, thường dành dụm từng đồng.
+                            Kinh doanh những việc chắc ăn như bắp nhưng ít lời.
+                            Không dám liều lĩnh, không có đầu óc đầu cơ. Vì mềm
+                            yếu, dễ bị bạn bè lợi dụng, vay mượn, ngược lại rất
+                            ngại ngùng khi vay mượn người khác.
+                          </p>
+                        </div>
+                        <div class="title-meaning-other">
+                          <h1>Tình duyên</h1>
+                          <p>
+                            Là bạn đời lý tưởng và nhiều khía cạnh, chan chứa
+                            tình thương yêu và sẵn sàng với người yêu. Nếu là vợ
+                            thì thường tìm đủ mọi cách để đem lại hạnh phúc cho
+                            chồng, dù phải hy sinh nhiều, giúp đỡ chồng rất
+                            nhiều. Nếu là chồng thì rất hòa nhã, dễ thương, ít
+                            đòi hỏi hoặc độc đoán, lại còn có thể bị các bà chi
+                            phối vì quá nể nang. Cần phải lưu ý đừng để khuynh
+                            hướng lãng mạn chi phối tính tốt bản nhiên vì Bạn dễ
+                            mềm yếu về tình yêu. Cần phải nhận thức là: thực tế
+                            cũng quan trọng như lãng mạn.
+                          </p>
+                        </div>
+                        <div class="title-meaning-other">
+                          <h1>Tổng kết</h1>
+                          <p>
+                            Sứ mệnh cuộc đời của Bạn trong kiếp này là người hoà
+                            giải, kiến tạo hoà bình. Cần tạo ra một môi trường
+                            mà ở đó mọi người luôn yêu thương, hòa hợp, cộng
+                            sinh giúp đỡ lẫn nhau. Bạn chính là cầu nối giữa
+                            những xung đột và bất hòa của mọi người, tính tình
+                            cẩn thận, ngăn nắp, dễ cộng tác sẵn lòng giúp đỡ mọi
+                            người. Bạn luôn thích hoạt động ở phía sau hậu
+                            trường chứ không thích đứng đầu.
+                          </p>
+                        </div>
+                        <div class="next-tab" #nextTab>
+                          <div class="next-tab__wrap-left"></div>
+                          <div class="next-tab__wrap-right">
+                            <div>
+                              <p>Ngày sinh & Bài học</p>
+                              <div class="img-next">
+                                <img
+                                  src="assets/images/next.png"
+                                  alt=""
+                                  (click)="t.select('tab-selectbyid2')"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              </ngb-tab>
+              <ngb-tab id="tab-selectbyid2">
+                <ng-template ngbTabTitle>Ngày sinh & bài học </ng-template>
+                <ng-template ngbTabContent>
+                  <div class="tab-set-2 tab-set-1">
+                    <div class="tab-set-1__wrap">
+                      <div class="tab-set-1__main-content mt-0">
+                        <div class="title-meaning">
+                          <h1>Ngày sinh & bài học</h1>
+                          <p>
+                            Ý nghĩa cuộc đời của bạn trong kiếp này là: Phải cố
+                            gắng phấn đấu vươn lên để hoàn thành kiếp người thủ
+                            lĩnh đứng đầu.
+                          </p>
+                          <p>
+                            Tượng trưng cho nguyên tắc của sự KHỞI ĐẦU. Nó thể
+                            hiện rằng Bạn phải học để tự đứng trên đôi chân của
+                            mình, trở nên quyết đoán và dành được sự công nhận
+                            cho tài năng bản thân. Vì vậy Bạn sẽ có nhiều tham
+                            vọng, sẽ dành được thành công khi được thể hiện ý
+                            tưởng của mình. Bạn độc lập, sáng tạo, bướng bỉnh và
+                            có tính cách mạnh mẽ. Nguồn năng lượng của Bạn mang
+                            tính dương, tập trung và lí trí.
+                          </p>
+                          <p>
+                            <span>Tài năng</span> - Độc lập, sáng tạo, tinh
+                            tường, tiên phong, mãnh liệt, cương quyết, thống
+                            lĩnh.
+                          </p>
+                          <p>
+                            <span>Tính xấu</span> - Ngoan cố, tự cao tự đại,
+                            không ý tứ, tham vọng, muốn chinh phục, ương ngạnh,
+                            bốc đồng, độc đoán, vị kỷ.
+                          </p>
+                          <p>
+                            <span>Mục tiêu cá nhân</span> - Khẳng định bản thân,
+                            gây dựng được tên tuổi.
+                          </p>
+                          <p>
+                            <span>Sợ hãi</span> - Bị bỏ qua, không được sử dụng
+                            tài năng.
+                          </p>
+                          <p>
+                            <span> Nghề nghiệp</span> - Sẽ thành công với nhà
+                            văn, nhà sáng chế, đạo diễn, lãnh đạo, điều hành
+                            doanh nghiệp, giám đốc kinh doanh. Sẽ hợp với các
+                            dạng ngành nghề thể thao hay biểu diễn chuyên
+                            nghiệp, thiết kế và trang trí nội thất. Cũng có thể
+                            làm nhân viên sales giỏi, chính trị gia, nhà gây quỹ
+                            từ thiện, hoạch định đô thị, kiến trúc sư, chuyên
+                            gia địa ốc…
+                          </p>
+                        </div>
+                        <div class="next-tab">
+                          <div class="next-tab__wrap-left">
+                            <div>
+                              <p>Ý nghĩa, sứ mệnh</p>
+                              <div class="img-next">
+                                <img
+                                  src="assets/images/back.png"
+                                  alt=""
+                                  (click)="t.select('tab-selectbyid1')"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="next-tab__wrap-right">
+                            <div>
+                              <p>Ưu điểm</p>
+                              <div class="img-next">
+                                <img
+                                  src="assets/images/next.png"
+                                  alt=""
+                                  (click)="t.select('tab-selectbyid3')"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              </ngb-tab>
+              <ngb-tab id="tab-selectbyid3">
+                <ng-template ngbTabTitle>Ưu điểm </ng-template>
+                <ng-template ngbTabContent>
+                  <div class="tab-set-2 tab-set-1">
+                    <div class="tab-set-1__wrap">
+                      <div class="tab-set-1__main-content mt-0">
+                        <div class="title-meaning">
+                          <h1>Ưu điểm</h1>
+                          <p>
+                            Ý nghĩa cuộc đời của bạn trong kiếp này là: Phải cố
+                            gắng phấn đấu vươn lên để hoàn thành kiếp người thủ
+                            lĩnh đứng đầu.
+                          </p>
+                          <p>
+                            Tượng trưng cho nguyên tắc của sự KHỞI ĐẦU. Nó thể
+                            hiện rằng Bạn phải học để tự đứng trên đôi chân của
+                            mình, trở nên quyết đoán và dành được sự công nhận
+                            cho tài năng bản thân. Vì vậy Bạn sẽ có nhiều tham
+                            vọng, sẽ dành được thành công khi được thể hiện ý
+                            tưởng của mình. Bạn độc lập, sáng tạo, bướng bỉnh và
+                            có tính cách mạnh mẽ. Nguồn năng lượng của Bạn mang
+                            tính dương, tập trung và lí trí.
+                          </p>
+                          <p>
+                            <span>Tài năng</span> - Độc lập, sáng tạo, tinh
+                            tường, tiên phong, mãnh liệt, cương quyết, thống
+                            lĩnh.
+                          </p>
+                          <p>
+                            <span>Tính xấu</span> - Ngoan cố, tự cao tự đại,
+                            không ý tứ, tham vọng, muốn chinh phục, ương ngạnh,
+                            bốc đồng, độc đoán, vị kỷ.
+                          </p>
+                          <p>
+                            <span>Mục tiêu cá nhân</span> - Khẳng định bản thân,
+                            gây dựng được tên tuổi.
+                          </p>
+                          <p>
+                            <span>Sợ hãi</span> - Bị bỏ qua, không được sử dụng
+                            tài năng.
+                          </p>
+                          <p>
+                            <span> Nghề nghiệp</span> - Sẽ thành công với nhà
+                            văn, nhà sáng chế, đạo diễn, lãnh đạo, điều hành
+                            doanh nghiệp, giám đốc kinh doanh. Sẽ hợp với các
+                            dạng ngành nghề thể thao hay biểu diễn chuyên
+                            nghiệp, thiết kế và trang trí nội thất. Cũng có thể
+                            làm nhân viên sales giỏi, chính trị gia, nhà gây quỹ
+                            từ thiện, hoạch định đô thị, kiến trúc sư, chuyên
+                            gia địa ốc…
+                          </p>
+                        </div>
+                        <div class="next-tab">
+                          <div class="next-tab__wrap-left">
+                            <div>
+                              <p>Ngày sinh, bài học</p>
+                              <div class="img-next">
+                                <img
+                                  src="assets/images/back.png"
+                                  alt=""
+                                  (click)="t.select('tab-selectbyid2')"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="next-tab__wrap-right">
+                            <div>
+                              <p>Nhược điểm</p>
+                              <div class="img-next">
+                                <img
+                                  src="assets/images/next.png"
+                                  alt=""
+                                  (click)="t.select('tab-selectbyid4')"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              </ngb-tab>
+              <ngb-tab id="tab-selectbyid4">
+                <ng-template ngbTabTitle>Nhược điểm</ng-template>
+                <ng-template ngbTabContent>
+                  <div class="tab-set-2 tab-set-1">
+                    <div class="tab-set-1__wrap">
+                      <div class="tab-set-1__main-content mt-0">
+                        <div class="title-meaning">
+                          <h1>Nhược điểm</h1>
+                          <p>
+                            Ý nghĩa cuộc đời của bạn trong kiếp này là: Phải cố
+                            gắng phấn đấu vươn lên để hoàn thành kiếp người thủ
+                            lĩnh đứng đầu.
+                          </p>
+                          <p>
+                            Tượng trưng cho nguyên tắc của sự KHỞI ĐẦU. Nó thể
+                            hiện rằng Bạn phải học để tự đứng trên đôi chân của
+                            mình, trở nên quyết đoán và dành được sự công nhận
+                            cho tài năng bản thân. Vì vậy Bạn sẽ có nhiều tham
+                            vọng, sẽ dành được thành công khi được thể hiện ý
+                            tưởng của mình. Bạn độc lập, sáng tạo, bướng bỉnh và
+                            có tính cách mạnh mẽ. Nguồn năng lượng của Bạn mang
+                            tính dương, tập trung và lí trí.
+                          </p>
+                          <p>
+                            <span>Tài năng</span> - Độc lập, sáng tạo, tinh
+                            tường, tiên phong, mãnh liệt, cương quyết, thống
+                            lĩnh.
+                          </p>
+                          <p>
+                            <span>Tính xấu</span> - Ngoan cố, tự cao tự đại,
+                            không ý tứ, tham vọng, muốn chinh phục, ương ngạnh,
+                            bốc đồng, độc đoán, vị kỷ.
+                          </p>
+                          <p>
+                            <span>Mục tiêu cá nhân</span> - Khẳng định bản thân,
+                            gây dựng được tên tuổi.
+                          </p>
+                          <p>
+                            <span>Sợ hãi</span> - Bị bỏ qua, không được sử dụng
+                            tài năng.
+                          </p>
+                          <p>
+                            <span> Nghề nghiệp</span> - Sẽ thành công với nhà
+                            văn, nhà sáng chế, đạo diễn, lãnh đạo, điều hành
+                            doanh nghiệp, giám đốc kinh doanh. Sẽ hợp với các
+                            dạng ngành nghề thể thao hay biểu diễn chuyên
+                            nghiệp, thiết kế và trang trí nội thất. Cũng có thể
+                            làm nhân viên sales giỏi, chính trị gia, nhà gây quỹ
+                            từ thiện, hoạch định đô thị, kiến trúc sư, chuyên
+                            gia địa ốc…
+                          </p>
+                        </div>
+                        <div class="next-tab">
+                          <div class="next-tab__wrap-left">
+                            <div>
+                              <p>Ưu điểm</p>
+                              <div class="img-next">
+                                <img
+                                  src="assets/images/back.png"
+                                  alt=""
+                                  (click)="t.select('tab-selectbyid3')"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="next-tab__wrap-right">
+                            <div>
+                              <p>Lời khuyên cho bạn</p>
+                              <div class="img-next">
+                                <img
+                                  src="assets/images/next.png"
+                                  alt=""
+                                  (click)="t.select('tab-selectbyid5')"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              </ngb-tab>
+              <ngb-tab id="tab-selectbyid5">
+                <ng-template ngbTabTitle>Lời khuyên cho bạn </ng-template>
+                <ng-template ngbTabContent>
+                  <div class="tab-set-2 tab-set-1">
+                    <div class="tab-set-1__wrap">
+                      <div class="tab-set-1__main-content mt-0">
+                        <div class="title-meaning">
+                          <h1>Lời khuyên cho bạn</h1>
+                          <p>
+                            Cần kiểm soát được tình cảm của mình. Sẽ có xu hướng
+                            luôn khăng khăng cho rằng mình luôn là đúng, vì vậy
+                            cần hạn chế những hành động quá khích, tránh giận dữ
+                            hoặc tỏ ra công kích, nếu không rất dễ trở thành một
+                            người độc đoán, hà khắc, không biết khoan dung và
+                            thậm chí là thô lỗ. Đừng để mình bị điểu khiển bởi
+                            lòng kiêu hãnh và sự tự tin quá mức. Tài năng cần
+                            phải đi kèm với sự khiêm nhường chứ không nên nuôi
+                            dưỡng bằng sự kiêu căng tự phụ.
+                          </p>
+                        </div>
+                        <div class="title-meaning-other">
+                          <h1>
+                            Luận giải về chu kỳ thăng trầm trong từng năm của
+                            bạn
+                          </h1>
+                          <div class="chart-img">
+                            <img src="assets/images/chart.png" alt="" />
+                          </div>
+                          <p>
+                            Trên đây mới chỉ là sự Giải mã cơ bản về bạn. Nếu
+                            bạn muốn biết chi tiết hơn về con người của mình;
+                            những lời khuyên phù hợp nhất và dành riêng cho bạn;
+                            tiếp đến là giải mã vận mệnh, thăng trầm và ý nghĩa
+                            từng năm của bạn, hãy đăng kí tại đây để nhận bản
+                            Giải mã chi tiết chuyên sâu nhé!
+                          </p>
+                        </div>
+                        <div class="next-tab">
+                          <div class="next-tab__wrap-left">
+                            <div>
+                              <p>Nhược điểm</p>
+                              <div class="img-next">
+                                <img
+                                  src="assets/images/back.png"
+                                  alt=""
+                                  (click)="t.select('tab-selectbyid4')"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="next-tab__wrap-right">
+                            <div>
+                              <p style="color: #f15828;">
+                                Giải mã chuyên sâu
+                              </p>
+                              <div class="img-next">
+                                <img
+                                  src="assets/images/next-color.png"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              </ngb-tab>
+            </ngb-tabset>
+          </div>
+        </div>
+        <div class="main-content-wrap__right">
+          <p class="right-title">Thông tin cá nhân</p>
+          <div class="img-chart-triangle">
+            <div class="img-chart-triangle__infor">
+              <h1>{{ name }}</h1>
+              <div class="infor-detail">
+                <p class="infor-detail__lable">Ngày sinh</p>
+                <p class="infor-detail__text">{{ birthday }}</p>
+              </div>
+              <div class="infor-detail">
+                <p class="infor-detail__lable">Giờ sinh</p>
+                <p class="infor-detail__text">{{ hours }}</p>
+              </div>
+              <div class="infor-detail">
+                <p class="infor-detail__lable">Nơi sinh</p>
+                <p class="infor-detail__text">{{ address }}</p>
+              </div>
+            </div>
+
+            <p class="chart-title">
+              Kim tự tháp ngày sinh <i class="fas fa-question-circle"></i>
+            </p>
+            <div class="img-chart-triangle__wrap">
+              <div class="main-chart">
+                <p
+                  *ngFor="let item of pyramidRow4; index as i"
+                  class="data-number data-number-1"
+                >
+                  {{ item }}
+                </p>
+                <p
+                  class="data-number"
+                  *ngFor="let item of pyramidRow3; index as i"
+                  [ngClass]="{
+                    'data-number-2': i === 0,
+                    'data-number-3': i === 1
+                  }"
+                >
+                  {{ item }}
+                </p>
+                <p
+                  class="data-number"
+                  *ngFor="let item of pyramidRow2; index as i"
+                  [ngClass]="{
+                    'data-number-5': i === 0,
+                    'data-number-6': i === 1,
+                    'data-number-4': i === 2
+                  }"
+                >
+                  {{ item }}
+                </p>
+                <p
+                  class="data-number"
+                  *ngFor="let item of pyramidRow1; index as i"
+                  [ngClass]="{
+                    'data-number-13': i === 0,
+                    'data-number-8': i === 1,
+                    'data-number-9': i === 2,
+                    'data-number-11': i === 3,
+                    'data-number-12': i === 4,
+                    'data-number-7': i === 5,
+                    'data-number-10': i === 6
+                  }"
+                >
+                  {{ item }}
+                </p>
+                <img src="assets/images/triangle-chart.png " alt="" />
+              </div>
+            </div>
+            <div class="img-chart-triangle__btn-bottom">
+              <button>Nhập lại thông tin</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <app-search-result-footer></app-search-result-footer>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+<div class="header-content">
+  <div class="container-wrap">
+    <div class="row menu-nav-device">
+      <div class="col-md-5">
+        <div class="header-content__contact">
+          <div class="contact-wrap">
+            <div class="contact-wrap__phone">
+              <p><i class="fas fa-phone-alt"></i>&nbsp;&nbsp;0989 89 98 98</p>
+            </div>
+            <div class="contact-wrap__face">
+              <p>
+                <i class="fab fa-facebook-f"></i>&nbsp;&nbsp;<a href=""
+                  >giaimachiemtinh</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="header-content__logo">
+          <a [routerLink]="['/pages/home']">
+            <img src="assets/images/logo.png" alt=""
+          /></a>
+          <p>ASTROLOGY</p>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="header-content__menu-nav">
+          <ul>
+            <li><a [routerLink]="['/pages/home']">TRANG CHỦ</a></li>
+            <li><a href="">GIẢI MÃ</a></li>
+            <li><a href="">LIÊN HỆ</a></li>
+            <li class="globe-icon">
+              <a href=""><i class="fas fa-globe"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header-content__moblie">
+      <div class="wrap-header-mobile">
+        <div class="header-content__logo">
+          <a [routerLink]="['/pages/home']">
+            <img src="assets/images/logo.png" alt=""
+          /></a>
+          <p>ASTROLOGY</p>
+        </div>
+        <div class="header-content__icon-menu" (click)="toggleMenuMobile()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div class="menu-nav-mobile" *ngIf="show" [@menuToggle]>
+        <div class="close-menu" (click)="toggleMenuMobile()">
+          <i class="fas fa-times"></i>
+        </div>
+        <ul>
+          <li><a [routerLink]="['/pages/home']">TRANG CHỦ</a></li>
+          <li><a href="">GIẢI MÃ</a></li>
+          <li><a href="">LIÊN HỆ</a></li>
+          <li class="globe-icon">
+            <a href=""><i class="fas fa-globe"></i></a>
+          </li>
+          <li><i class="fas fa-phone-alt"></i>&nbsp;&nbsp;0989 89 98 98</li>
+          <li>
+            <i class="fab fa-facebook-f"></i>&nbsp;&nbsp;<a href=""
+              >giaimachiemtinh</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

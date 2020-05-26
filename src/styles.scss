@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~ngx-smart-modal/ngx-smart-modal";
+@import "~ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+@import "~ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "~ngx-toastr/toastr";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "assets/styles/base/fonts";
+@import "assets/styles/abstracts/_function.scss";
+
+.pac-container {
+  z-index: 2000 !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.cdk-overlay-container {
+  z-index: 2000 !important;
+}
+
+.timepicker-backdrop-overlay,
+.timepicker-overlay {
+  z-index: 3000 !important;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";

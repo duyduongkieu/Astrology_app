@@ -1,0 +1,289 @@
+<div class="astrology-home">
+  <div class="home-bg-gray">
+    <div class="home-bg-top">
+      <div class="home-bg-top__img">
+        <img src="assets/images/rectangle-border.png" alt="" />
+      </div>
+    </div>
+    <div class="home-description">
+      <div class="container">
+        <div class="home-description__wrap">
+          <div class="wrap-content">
+            <h1 class="title">Giải mã vận mệnh</h1>
+            <p>
+              Con người khi sinh ra ai cũng có số mệnh riêng, chịu ảnh hưởng bởi
+              rất nhiều quy luật của cuộc sống. Tuy nhiên nếu chúng ta hiểu sâu
+              sắc về bản thân, chúng ta có thể cải thiện và thay đổi rất nhiều
+              điều về con người và vận mệnh của mình. Đó chính là chiến thắng số
+              phận “Đức Năng Thắng Số”.
+            </p>
+            <div class="btn-show-modal" (click)="onShowModal()">
+              <img src="assets/images/Primary.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-bg-top__bg-img-bot">
+      <div class="counting">
+        <div class="container-wrap">
+          <div class="counting__wrap">
+            <h1>{{ number1 }},{{ number2 }},0{{ number3 }}</h1>
+            <p class="text">giải mã đã được thực hiện</p>
+            <p>
+              Tò mò về độ chính xác của giải mã về bạn?
+              <a href="">Tham gia ngay</a> để tìm hiểu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home-descripton-infor">
+    <div class="destiny-decode">
+      <div class="container-wrap">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="destiny-decode__left">
+              <div class="content-wrap">
+                <p class="normal-text">
+                  Giới thiệu về
+                </p>
+                <h1>Giải mã vận mệnh</h1>
+                <p>
+                  Chúng tôi với sứ mệnh <span>nghiên cứu</span>,
+                  <span>tư vấn</span> và <span>giải mã</span> về con người, luôn
+                  mong muốn mang đến những giá trị hữu ích nhất cho cộng đồng.
+                </p>
+                <p>
+                  Giúp các bạn hiểu rõ về bản thân, làm chủ cuộc đời và vận mệnh
+                  của mình cũng như trang bị một tư duy <span>tích cực</span> và
+                  <span> lạc quan</span> để sẵn sàng đón nhận vạn sự như ý trong
+                  cuộc sống và tận hưởng những gì tốt đẹp nhất mà cuộc đời mang
+                  lại cho chúng ta.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-6">
+            <div class="destiny-decode__right">
+              <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide>
+                  <div
+                    class="destiny-decode__wrap"
+                    style="border-top: 5px solid #f15828;"
+                  >
+                    <div class="content-wrap">
+                      <div class="img-character">
+                        <img src="assets/images/character.png" alt="" />
+                      </div>
+                      <p>
+                        “Candida overgrowth in the body may be the precursor to
+                        immune dysfunction causing all kinds of illness and
+                        allergies to food.”
+                      </p>
+                      <div class="user-infor">
+                        <img src="assets/images/Oval.png" alt="" />
+                        <p style="color: #f15828;">Abbie Taylor</p>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                  <div
+                    class="destiny-decode__wrap"
+                    style="border-top: 5px solid #168397;"
+                  >
+                    <div class="content-wrap">
+                      <div class="img-character">
+                        <img src="assets/images/character.png" alt="" />
+                      </div>
+                      <p>
+                        “Let’s face it, we’ve all the seen the commercials from
+                        the various drug companies promising a simple “cure” for
+                        your anxiety.”
+                      </p>
+                      <div class="user-infor">
+                        <img src="assets/images/Oval1.png" alt="" />
+                        <p style="color: #168397;">Johnny Sanchez</p>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                  <div
+                    class="destiny-decode__wrap"
+                    style="border-top: 5px solid #825137;"
+                  >
+                    <div class="content-wrap">
+                      <div class="img-character">
+                        <img src="assets/images/character.png" alt="" />
+                      </div>
+                      <p>
+                        “Most people who work in an office environment, buy
+                        computer products, or have a computer at home have had
+                        the “fun” experience”
+                      </p>
+                      <div class="user-infor">
+                        <img src="assets/images/Oval2.png" alt="" />
+                        <p style="color: #825137;">David Fisher</p>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                  <div class="destiny-decode__wrap">
+                    <div class="content-wrap">
+                      <div class="img-character">
+                        <img src="assets/images/character.png" alt="" />
+                      </div>
+                      <p>
+                        "Candida overgrowth in the body may be the precursor to
+                        immune dysfunction causing all kinds of illness and
+                        allergies to food."
+                      </p>
+                      <div class="user-infor">
+                        <img src="assets/images/Oval.png" alt="" />
+                        <p style="color: #f15828;">Abbie Taylor</p>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              </owl-carousel-o>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reason-using">
+      <div class="bg-wrap">
+        <div class="reason-bg-cloud"></div>
+        <div class="container-wrap">
+          <div class="reason-using__content-top">
+            <div class="btn-discover">
+              <img src="assets/images/Primary.png" alt="" />
+            </div>
+            <div class="reason-using__column-line"></div>
+            <div class="reason-using__title">
+              <p>Lý do nên chọn dịch vụ</p>
+              <h1>Giải mã vận mệnh</h1>
+            </div>
+          </div>
+        </div>
+        <div class="reason-using__reason-list">
+          <div class="reason-list-wrap">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="text-wrap">
+                  <h1>01</h1>
+                  <div class="text">
+                    <p>Khoa học</p>
+                    <span
+                      >Nội dung giải mã là kết quả của các
+                      <b>công trình nghiên cứu</b> về khoa học vận mệnh
+                      <b>nổi tiếng</b> trên thế giới.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="img-wrap">
+                  <img src="assets/images/reason-img1.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 order-item-second">
+                <div class="img-wrap" style="justify-content: start;">
+                  <img src="assets/images/reason-img2.png" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6 order-item-first">
+                <div class="text-wrap text-wrap-center">
+                  <h1>02</h1>
+                  <div class="text">
+                    <p style="color: #168397;">Chuẩn xác</p>
+                    <span
+                      >Đây là các bộ môn đã được nghiên cứu và
+                      <b>kiểm chứng</b>, nên các bạn có thể hoàn toàn yên tâm về
+                      <b> tính chính xác</b> của nó.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="text-wrap">
+                  <h1>03</h1>
+                  <div class="text">
+                    <p>Độc đáo</p>
+                    <span
+                      >Những nội dung chi tiết này <b>vô cùng mới lạ </b> ở Việt
+                      Nam, chắc chắn bạn sẽ chưa từng biết tới.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="img-wrap">
+                  <img src="assets/images/reason-img3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="img-content-bot">
+                  <img src="assets/images/sun-icon.png" alt="" />
+                </div>
+                <div class="text-content-bot text-wrap">
+                  <h1>04</h1>
+                  <p>Dễ hiểu</p>
+                  <span
+                    >Nội dung giải mã được hệ thống phân tích một cách vô cùng
+                    <b>thực tế </b> và <b>chi tiết</b> nhất.</span
+                  >
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="img-content-bot">
+                  <img src="assets/images/sun-icon.png" alt="" />
+                </div>
+                <div class="text-content-bot text-wrap">
+                  <h1>05</h1>
+                  <p style="color: #168397;">Hợp lý</p>
+                  <span>
+                    Chi phí hợp lý cho việc <b>thấu hiểu</b> bản thân,
+                    <b>làm chủ</b> vận mệnh của cuộc đời mình.</span
+                  >
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="img-content-bot">
+                  <img src="assets/images/sun-icon.png" alt="" />
+                </div>
+                <div class="text-content-bot text-wrap">
+                  <h1>06</h1>
+                  <p>Nhiệt tình</p>
+                  <span
+                    >Đội ngũ của chúng tôi sẽ <b>tư vấn</b> và
+                    <b>hỗ trợ tận tình</b> cho mọi thắc mắc về nội dung giải
+                    mã.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="btn-discover-bot">
+              <img src="assets/images/Primary.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <app-contact-form></app-contact-form>
+  </div>
+</div>
+<ngx-smart-modal #popupOne [identifier]="'popupOne'">
+  <app-information-form></app-information-form>
+</ngx-smart-modal>

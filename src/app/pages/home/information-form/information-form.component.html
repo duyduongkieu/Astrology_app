@@ -1,0 +1,152 @@
+<div class="popup-contact-form">
+  <div class="popup-contact-form__title">
+    <h1>Thông tin của bạn</h1>
+  </div>
+  <div class="form-input-infor">
+    <div class="form-input-info__wrap">
+      <form action="" (ngSubmit)="onSubmit()" [formGroup]="fContact">
+        <div class="row row-top">
+          <div class="col-md-4">
+            <label for="" class="lb-title">Họ tên</label><br />
+            <input
+              class="form-control"
+              type="text"
+              formControlName="fullName"
+              [ngClass]="{
+                'is-invalid': submitted && fContact.controls.fullName.errors
+              }"
+            />
+            <div *ngIf="submitted && fContact.controls.fullName.errors">
+              <small *ngIf="fContact.controls.fullName.errors.required">
+                Trường này không nược để trống
+              </small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="" class="lb-title">Email</label><br />
+            <input
+              class="form-control"
+              type="text"
+              formControlName="email"
+              [ngClass]="{
+                'is-invalid': submitted && fContact.controls.email.errors
+              }"
+            />
+            <div *ngIf="submitted && fContact.controls.email.errors">
+              <small *ngIf="fContact.controls.email.errors.required">
+                Trường này không nược để trống
+              </small>
+              <small *ngIf="fContact.controls.email.errors.pattern">
+                Định dạng email chưa đúng
+              </small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="" class="lb-title">Số điện thoại </label><br />
+            <input
+              class="form-control"
+              type="text"
+              formControlName="phone"
+              [ngClass]="{
+                'is-invalid': submitted && fContact.controls.phone.errors
+              }"
+            />
+            <div *ngIf="submitted && fContact.controls.phone.errors">
+              <small *ngIf="fContact.controls.phone.errors.required">
+                Trường này không nược để trống
+              </small>
+              <small *ngIf="fContact.controls.phone.errors.pattern">
+                Định dạng số điện thoại chưa đúng
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="row row-middle">
+          <div class="col-md-4">
+            <label for="" class="lb-title">Giới tính</label><br />
+            <input
+              type="radio"
+              id="male"
+              class=""
+              formControlName="gender"
+              value="1"
+              [checked]="true"
+            />
+            <label class="genderName" for="male">Nam</label>
+            <input
+              type="radio"
+              id="female"
+              formControlName="gender"
+              value="2"
+            />
+            <label class="genderName" for="female">Nữ</label>
+            <input type="radio" id="lgbt" formControlName="gender" value="3" />
+            <label class="genderName" for="lgbt">LGBT</label>
+          </div>
+          <div class="col-md-4">
+            <label for="" class="lb-title">Nơi sinh</label><br />
+            <input
+              formControlName="address"
+              placeholder=""
+              autocorrect="off"
+              autocapitalize="off"
+              spellcheck="off"
+              type="text"
+              class="form-control"
+              #search
+              [ngClass]="{
+                'is-invalid': submitted && fContact.controls.address.errors
+              }"
+            />
+            <div *ngIf="submitted && fContact.controls.address.errors">
+              <small *ngIf="fContact.controls.address.errors.required">
+                Trường này không nược để trống
+              </small>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <label for="" class="lb-title">Giờ sinh</label><br />
+            <div class="select-wrap-time">
+              <input
+                #timer
+                placeholder="giờ:phút"
+                aria-label="24hr format"
+                [ngxTimepicker]="fullTime"
+                [format]="24"
+                readonly
+              />
+              <ngx-material-timepicker #fullTime></ngx-material-timepicker>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <label for="" class="lb-title">Ngày sinh</label><br />
+            <div class="input-date">
+              <input
+                matInput
+                [matDatepicker]="picker"
+                placeholder="ngày/tháng/năm"
+                formControlName="birthday"
+                [ngClass]="{
+                  'is-invalid': submitted && fContact.controls.birthday.errors
+                }"
+              />
+              <mat-datepicker-toggle
+                matSuffix
+                [for]="picker"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </div>
+            <div *ngIf="submitted && fContact.controls.birthday.errors">
+              <small *ngIf="fContact.controls.birthday.errors.required">
+                Trường này không nược để trống
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="btn-decryption">
+          <button><img src="assets/images/decryption.png" alt="" /></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

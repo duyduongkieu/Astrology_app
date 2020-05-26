@@ -1,0 +1,213 @@
+:host::ng-deep .result-page {
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .result-page-bg-img {
+      display: none;
+    }
+
+    &__wrap {
+      padding-top: 200px;
+      z-index: 12;
+
+      .main-content-wrap {
+        padding: 0 20px;
+        margin: 0;
+        flex-direction: column;
+
+        .border-bot {
+          display: none;
+        }
+
+        &__left {
+          width: 100%;
+          order: 2;
+
+          ngb-tabset {
+            display: flex;
+            flex-direction: column;
+
+            .mat-expansion-panel-header:hover {
+              background: none;
+            }
+
+            ul {
+              width: 100%;
+            }
+
+            .tab-content {
+              width: 100%;
+              margin-top: 50px;
+
+              .next-tab {
+                margin-top: 50px;
+
+                &__wrap-right,
+                &__wrap-left {
+                  p {
+                    font-size: 13px;
+                    line-height: inherit;
+                  }
+
+                  img {
+                    height: 40px;
+                    width: 40px;
+                  }
+                }
+
+                &__wrap-left {
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+
+        &__right {
+          width: 100%;
+          order: 1;
+          margin-bottom: 30px;
+          .img-chart-triangle {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    z-index: 12;
+
+    &__wrap {
+      padding-top: 270px;
+      .main-content-wrap {
+        margin: 0;
+        flex-direction: column;
+
+        .border-bot {
+          display: none;
+        }
+
+        &__left {
+          order: 2;
+          width: 100%;
+          margin-top: 50px;
+
+          ngb-tabset {
+            .mat-expansion-panel-header:hover {
+              background: none;
+            }
+
+            ul {
+              width: 30%;
+            }
+
+            .tab-content {
+              width: 70%;
+              margin-top: 10px;
+
+              .next-tab {
+                margin-top: 50px;
+
+                &__wrap-right,
+                &__wrap-left {
+                  p {
+                    font-size: 13px;
+                    line-height: inherit;
+                  }
+
+                  img {
+                    height: 40px;
+                    width: 40px;
+                  }
+                }
+
+                &__wrap-left {
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+
+        &__right {
+          order: 1;
+          width: 100%;
+
+          .img-chart-triangle {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1280px) {
+    z-index: 11;
+    &__wrap {
+      .main-content-wrap {
+        padding: 0 10px;
+        margin: 0px 41px;
+
+        &__left {
+          width: 70%;
+
+          .content-left-wrap {
+            ul {
+              width: 43%;
+            }
+
+            .tab-content {
+              width: 57%;
+
+              .next-tab {
+                &__wrap-left {
+                  p {
+                    font-size: 18px;
+                    line-height: 18px;
+                  }
+                }
+                &__wrap-right {
+                  p {
+                    font-size: 18px;
+                    line-height: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &__right {
+          width: 30%;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1400px) and (max-width: 1440px) {
+    z-index: 11;
+
+    &__wrap {
+      .main-content-wrap {
+        &__left {
+          width: 74%;
+          .content-left-wrap {
+            ul {
+              width: 35%;
+            }
+
+            .tab-content {
+              width: 65%;
+            }
+          }
+        }
+
+        &__right {
+          width: 26%;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1600px) and (max-width: 1680px) {
+  }
+}
