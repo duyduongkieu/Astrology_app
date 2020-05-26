@@ -1,0 +1,236 @@
+@media only screen and (min-width: 320px) and (max-width: 449px) {
+}
+@media only screen and (min-width: 320px) and (max-width: 449px) {
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .astrology-home {
+    .row {
+      margin: 0 0;
+    }
+
+    .home-bg-top {
+      display: none;
+
+      &__bg-img-bot {
+        .counting {
+          margin-top: 30px;
+
+          .container-wrap {
+            margin: 0px 5px;
+          }
+
+          &__wrap {
+            width: 100% !important;
+
+            h1 {
+              font-size: 40px !important;
+            }
+
+            .text {
+              font-size: 20px !important;
+              margin-top: 0 !important;
+            }
+          }
+        }
+      }
+    }
+
+    .home-bg-gray {
+      height: 760px;
+
+      .home-description {
+        .wrap-content {
+          padding-top: 180px !important;
+        }
+      }
+    }
+
+    .home-descripton-infor {
+      background-position: left center;
+      margin-top: 0;
+
+      .destiny-decode {
+        .container-wrap {
+          margin: 0 10px;
+        }
+      }
+
+      .reason-using {
+        &__content-top {
+          .btn-discover {
+            padding-top: 160px;
+          }
+        }
+
+        &__reason-list {
+          .reason-list-wrap {
+            padding: 0 10px;
+
+            .order-item-first {
+              order: 1;
+
+              .text-wrap-center {
+                padding-left: 0;
+              }
+            }
+
+            .order-item-second {
+              order: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  :host::ng-deep .nsm-dialog {
+    width: 100%;
+    margin-top: 5%;
+  }
+  :host::ng-deep .nsm-content {
+    margin: 0 10px;
+  }
+
+  :host::ng-deep .owl-carousel .owl-stage {
+    width: 1800px !important;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .astrology-home {
+    .counting {
+      &__wrap {
+        padding: 60% 0 10% 0 !important;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .astrology-home {
+    .home-bg-gray {
+      height: 1200px;
+    }
+
+    .home-description {
+      .wrap-content {
+        padding-top: 50% !important;
+      }
+    }
+
+    .home-descripton-infor {
+      .counting {
+        &__wrap {
+          padding: 60% 0 10% 0;
+        }
+      }
+
+      .destiny-decode {
+        .container-wrap {
+          margin: 0 50px;
+        }
+      }
+
+      .reason-using {
+        &__reason-list {
+          .reason-list-wrap {
+            padding: 0 50px;
+
+            .text-wrap-center {
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  :host::ng-deep .owl-carousel.owl-loaded {
+    bottom: 0;
+  }
+
+  :host::ng-deep .owl-carousel .owl-stage {
+    width: 2000px !important;
+  }
+
+  :host::ng-deep .nsm-dialog {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 928px) {
+  :host::ng-deep .owl-carousel.owl-drag .owl-item {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 929px) and (max-width: 991px) {
+  :host::ng-deep .owl-carousel.owl-drag .owl-item {
+    margin-left: 80px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .astrology-home {
+    .home-bg-gray {
+      height: 1200px;
+    }
+
+    .home-descripton-infor {
+      .counting {
+        &__wrap {
+          padding: 56% 0 10% 0;
+        }
+      }
+
+      .destiny-decode {
+        .container-wrap {
+          margin: 0 50px;
+        }
+      }
+
+      .reason-using {
+        &__reason-list {
+          .reason-list-wrap {
+            padding: 0 50px;
+          }
+        }
+        .btn-discover {
+          padding-top: 20%;
+        }
+      }
+    }
+  }
+
+  :host::ng-deep .owl-carousel .owl-stage {
+    width: 2000px !important;
+  }
+
+  :host::ng-deep .owl-carousel.owl-drag .owl-item {
+    margin-left: 90px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .astrology-home {
+    .home-descripton-infor {
+      .counting {
+        &__wrap {
+          padding: 310px 0 80px 0;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1648px) {
+  .astrology-home {
+    .home-descripton-infor {
+      .counting {
+        &__wrap {
+          padding: 49% 0 20% 0;
+        }
+      }
+    }
+  }
+}
